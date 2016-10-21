@@ -26,6 +26,9 @@ A short demo showcasing ETW's ability for "signatureless" ransomware detection. 
 utilizes the Windows Kernel provider to detect multiple versions of ransomware without signatures 
 and is based purely on heuretics provided by ETW. 
 
+##Requirements
+All examples require the TraceEvent library from Microsoft
+
 #License 
 All code code in the repo is subject to GPL v3. See the LICENSE file
 
