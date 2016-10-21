@@ -15,7 +15,7 @@ The Following POCs are included
 A tool demonstrating how ETW can be leveraged for logging keystrokes from USB keyboards 
 including clear-text credentials for Windows logins.
 
-##IE SSL Sniffing
+##WinINet SSL Sniffing
 A tool that catpures all data that passes throuh the WinINet library, encrypted or otherwise. 
 Since WinINet si the library used for transmitting HTTP/HTPS data in IE, Edge as well as *most* 
 applications in the Windows App store this potentially allows for the capture passwords, user 
