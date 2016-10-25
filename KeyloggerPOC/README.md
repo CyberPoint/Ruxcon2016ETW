@@ -2,7 +2,7 @@
 
 This is a POC demonstrating how ETW can be leveraged as a keylogger on Windows 7 and above. This is 
 accomplished through the ETW providers Microsoft-Windows-USB-USBPORT and Microsoft-Windows-USB-UCX
-and parsing the data to extract the relevant HID data.
+and parsing the HID data to extract the relevant keystrokes.
 
 ## Requirements
 Administrative privileges
@@ -10,15 +10,16 @@ Windows 7 (USB 2.0)
 Windows 8+ (USB 2.0 and USB 3.0)
 
 ## Usage
-To run the keylogger with the default session name (UsbKeylog) no arguments are required
-c:\> ETWKeylogger.exe
+To run the keylogger with the default session name (UsbKeylog) no arguments are required:
+```
+C:\> ETWKeylogger.exe
+```
 
 Session names can be specified via CLI:
 ETWKeylogger <session_name>
-
-example
-
-C:\>ETWKeylogger.exe Ruxcon2016
+```
+C:\> ETWKeylogger.exe Ruxcon2016
+```
 
 ## sample output
 ```
@@ -54,8 +55,8 @@ C:\>ETWKeylogger.exe Ruxcon2016
 
 ## Limitations
 English (ASCII) keyboards only.
-Full HID spec not supported (not all keys)
-A few second delay. All dynamic ETW sessions are prone some kind of delay
+Full HID Usage Table not supported (not all keys)
+A few second delay. All dynamic ETW sessions are prone to some kind of delay.
 
 ## Known Issues
 Multiple key strokes can appear on the same line
