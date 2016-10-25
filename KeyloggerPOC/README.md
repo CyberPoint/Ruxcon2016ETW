@@ -16,12 +16,13 @@ C:\> ETWKeylogger.exe
 ```
 
 Session names can be specified via CLI:
-ETWKeylogger <session_name>
+
+ETWKeylogger *session_name*
 ```
 C:\> ETWKeylogger.exe Ruxcon2016
 ```
 
-## sample output
+## Sample Output
 ```
 20161006 05:16:21.340	02 00 17 00 00 00 00 00		T
 20161006 05:16:21.660	00 00 0B 00 00 00 00 00		h
