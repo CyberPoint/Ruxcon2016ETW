@@ -1,5 +1,5 @@
 
-#Make ETW Greate Again - Ruxcon 2016
+#Make ETW Great Again - Ruxcon 2016
 This is a repo of our Proof of Concept (POC) code for our Event Tracing for Widows (ETW) 
 presentation at Ruxcon 2016. This code was written to demonstrate the concepts we 
 discussed in our presentation and is NOT intended for "production" use. Though we welcome 
